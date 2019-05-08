@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estacionamento</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">    <!-- O href precisa possuir a referencia ao arquivo CSS do Bootstrap -->
+    </head>
+    
+    <body onload="mostraPatio()">
+        <div class="container">     <!-- Classe container é uma classe do Bootstrap -->
+        <div class="header clearfix">   <!-- header clearfix classe do Bootstrap -->
+            <h2>Estacionamento <small>por: Bruno Ardel</small></h2>
+        <div class="jumbotron"> <!-- Classe jumbotron é uma classe do Bootstrap -->
+            <form id="formulario">
+            <div class="form-group">    <!-- Classe form-group é uma classe do Bootstrap -->
+                <label>Modelo do Veículo:</label>
+                <input type="text" id="modeloCarro" class="form-control">   <!-- Classe form-control é uma classe do Bootstrap -->
+            </div>
+            <div class="form-group">    <!-- Classe form-group é uma classe do Bootstrap -->
+                <label>Placa do Veículo:</label>
+                <input type="text" id="placaCarro" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>    <!-- Classe btn btn-primary é uma classe do Bootstrap -->
+            </form>
+        </div>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Placa</th>
+                            <th>Entrada</th>
+                            <th>Finalizar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados"></tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery.js"></script>    <!-- script src precisa possuir a referencia ao arquivo JS do Jquery -->
+    <script src="js/bootstrap.min.js"></script> <!-- script src precisa possuir a referencia ao arquivo JS do Bootstrap. Segundo o video o arquivo JS do Bootstrap só funciona bem com Jquery -->
+    <script src="js/main.js"></script>  
+    </body>
+</html>
